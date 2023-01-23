@@ -1,0 +1,9 @@
+.profile__destiny{
+    margin: 0;
+    align-self: start;
+    /*настройка текста*/
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}

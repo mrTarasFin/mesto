@@ -1,10 +1,16 @@
 .page{
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    position: relative;
+    margin: 0;
+    font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
+    /*настройка шрифта всей страницы*/
+    font-size: 27px;
+    font-weight: 400;
+    font-style: normal;
     text-rendering: optimizeLegibility;
     /* Цвета страницы */
     background-color: #000000;
