@@ -4,17 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./pages/index.css">
-    <title>Mesto</title>
     <meta name="description" content="Сервис Mesto: страница, куда можно делиться фотографиями с различных мест путешествий">
     <meta name="keywords" content="фотографии, путешествия, выкладывать фото">
     <meta name="author" content="Дарья Тарасенко">
+    <meta name="keywords" content="портфолио, html, css, javascript">
+    <title>Mesto</title>
 </head>
-<body class="page">
+<body class="page"> 
     <div class="content">
         <header class="header">
             <img src="./images/Logo-mesto.png" alt="Место-Россия. Логотип" class="header__logo">
         </header>
+        <main class="main">
+            <section class="profile">
+                <div class="profile__container">
+                    <img src="./images/Iv-custo.jpg" alt="Аватар для профайла" class="profile__avatar">
+                    <div class="profile__info">
+                        <div class="profile__title-wrapper">
+                            <h1 class="profile__name">Жак-Ив Кусто</h1>
+                            <button class="profile__edit-button" type="button"></button>
+                        </div>
+                        <p class="profile__destiny">Исследователь океана</p>
+                    </div>
+                </div>
+                <button class="profile__add-button" type="button"></button>
+            </section>
+            <section class="elements">
+                <ul class="elements__list"></ul>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
+        </footer>
     </div>
-    
 </body>
 </html>
