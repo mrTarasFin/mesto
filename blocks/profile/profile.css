@@ -7,3 +7,21 @@
     max-width: 880px;
     width: inherit;
 }
+
+@media screen and (max-width: 650px){
+    .profile{
+        max-width: 282px;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    .profile{
+        margin: 0 19px 0 19px;
+    }
+    
+}

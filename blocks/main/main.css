@@ -4,6 +4,11 @@
     width: 880px;
 }
 
+@media screen and (max-width: 915px) {
+    .main{
+        width: calc(100% - 42px);
+    }
+}
 
 @media screen and (max-width: 768px) {
     .main{

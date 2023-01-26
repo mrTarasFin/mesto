@@ -10,3 +10,11 @@
     background-position: center;
     border: 1px solid #ffffff;
 }
+
+@media screen and (max-width: 650px) {
+    .profile__add-button{
+        margin: 36px 0 0 0;
+        width: 282px;
+    }
+    
+}
