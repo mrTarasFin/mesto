@@ -1,23 +1,23 @@
 .main{
-    margin: 0;
-    width: calc(100% - 400px);
+    max-width: 880px;
+    min-width: 320px;
+    width: 880px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 915px) {
     .main{
-      width: calc(100% - 2 * 72px);
+        width: calc(100% - 42px);
     }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .main {
-      padding: 28px 27px 27px;
-      width: calc(100% - 2 * 48px);
+}
+
+@media screen and (max-width: 768px) {
+    .main{
+        width: calc(100% - 38px);
     }
-  }
-  
-  @media screen and (max-width: 425px) {
-    .main {
-      width: calc(100% - 2 * 19px);
+}
+
+@media screen and (max-width: 425px) {
+    .main{
+        width: calc(100% - 19px);
     }
-  }
+}

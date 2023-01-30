@@ -1,6 +1,6 @@
-.profile__info{
+.profile__title-wrapper{
     margin: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: left;
 }
