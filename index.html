@@ -30,26 +30,52 @@
                 <button class="profile__add-button" type="button"></button>
             </section>
             <section class="elements">
-                <ul class="elements__list"></ul>
+                <ul class="elements__list">
+                    <li class="card">
+                        <button type="button" class="card__button-foo"></button>
+                        <img src="#" alt="" class="card__image">
+                        <div class="card__wrapper">
+                          <h3 class="card__title"></h3>
+                          <div class="card__like-zone">
+                            <button type="button" class="card__button-like"></button>
+                            <span class="card__like-counter">0</span>
+                          </div>
+                        </div>
+                      </li>
+                </ul>
             </section>
         </main>
         <footer class="footer">
             <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
         </footer>
     </div>
-    <section class="popup">
+    <section class="popup" id="popap-profile">
         <div class="popup__container">
           <button class="popup__close-button" type="button"></button>
           <div class="popup__content">
             <h3 class="popup__title">Редактировать профиль</h3>
             <form name="popup-profile-form" class="popup__input-list" novalidate>
               <label class="popup__field">
-                <input id="name-input" name="userName" class="popup__input" type="text" placeholder="Имя" minlength="2" maxlength="40" required />
-                <span class="popup__input-error"></span>
+                <input id="name-input" 
+                    name="userName" 
+                    class="popup__input" 
+                    type="text" 
+                    placeholder="Имя" 
+                    minlength="2" 
+                    maxlength="40" 
+                    required>
+                <p class="popup__error" id="position-error"></p>
               </label>
               <label class="popup__field">
-                <input id="about-input" name="userAbout" class="popup__input" type="text" placeholder="О себе" minlength="2" maxlength="200" required />
-                <span class="popup__input-error"></span>
+                <input id="about-input"
+                    name="userDestiny"
+                    class="popup__input"
+                    type="text"
+                    placeholder="О себе"
+                    minlength="2"
+                    maxlength="200"
+                    required>
+                <p class="popup__error" id="position-error"></p>
               </label>
               <button class="popup__save-button popup__save-button_inactive" type="submit">Сохранить</button>
             </form>
