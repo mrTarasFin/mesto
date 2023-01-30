@@ -1,3 +1,17 @@
-.elements{
-    
-}
+.elements {
+    margin: 36px auto 0;
+    max-width: 282px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .elements {
+      margin: 50px auto 0;
+      max-width: 581px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .elements {
+      max-width: 880px;
+    }
+  }
