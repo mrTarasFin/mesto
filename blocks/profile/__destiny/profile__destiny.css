@@ -1,15 +1,9 @@
 .profile__destiny{
-    margin: 16px 0 0 0;
-}
-
-@media screen and (max-width: 650px) {
-    .profile__destiny{
-        margin: 14px 0 0 0;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        text-align: center;
-    }
-    
+    margin: 0;
+    align-self: start;
+    /*настройка текста*/
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
 }

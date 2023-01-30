@@ -1,7 +1,10 @@
 .profile__avatar{
+    position: relative;
     margin: 0;
     width: 120px;
     height: 120px;
+    background-image: url(../../../images/Jacques-Yves.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 50%;
-    object-fit: cover;
 }
