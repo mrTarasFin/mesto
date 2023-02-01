@@ -1,0 +1,10 @@
+.popup__content{
+    margin: 0;
+    width: 430px;
+    height: 330px;
+    display: block;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: center;
+    position: relative;
+}

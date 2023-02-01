@@ -1,0 +1,14 @@
+.popup__close-button{
+    margin: 0;
+    width: 32px;
+    height: 32px;
+    align-self: flex-end;
+    position: relative;
+    left: 38px;
+    top: -8px;
+    background-image: url(../../../images/cross-close.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+}

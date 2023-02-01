@@ -92,7 +92,7 @@
             <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
         </footer>
     </div>
-    <section class="popup" id="popap-profile">
+    <section class="popup">
         <div class="popup__container">
           <button class="popup__close-button" type="button"></button>
           <div class="popup__content">
@@ -105,9 +105,8 @@
                     type="text" 
                     placeholder="Имя" 
                     minlength="2" 
-                    maxlength="40" 
+                    maxlength="30" 
                     required>
-                <p class="popup__error" id="position-error"></p>
               </label>
               <label class="popup__field">
                 <input id="about-input"
@@ -118,9 +117,8 @@
                     minlength="2"
                     maxlength="200"
                     required>
-                <p class="popup__error" id="position-error"></p>
               </label>
-              <button class="popup__save-button popup__save-button_inactive" type="submit">Сохранить</button>
+              <button class="popup__save-button" type="submit">Сохранить</button>
             </form>
           </div>
         </div>
