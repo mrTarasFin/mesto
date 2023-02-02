@@ -1,4 +1,4 @@
-.profile__button-edit{
+.profile__edit-button{
     width: 18px;
     height: 18px;
     align-self: center;
@@ -7,4 +7,5 @@
     background-repeat: no-repeat;
     background-size: cover;
     border: 1px solid #ffffff;
+    cursor: pointer;
 }

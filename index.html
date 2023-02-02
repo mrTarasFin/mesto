@@ -22,7 +22,7 @@
                     <div class="profile__info">
                         <div class="profile__title-wrapper">
                             <h1 class="profile__name">Жак-Ив Кусто</h1>
-                            <button class="profile__edit-button" type="button"></button>
+                            <button class="profile__edit-button" id="open_popup" type="button"></button>
                         </div>
                         <p class="profile__destiny">Исследователь океана</p>
                     </div>
@@ -118,10 +118,11 @@
                     maxlength="200"
                     required>
               </label>
-              <button class="popup__save-button" type="submit">Сохранить</button>
+              <button class="popup__save-button popup__save-button_inactive" id="save_popup" type="submit">Сохранить</button>
             </form>
           </div>
         </div>
     </section>
+  <script src="popup.js"></script>
 </body>
 </html>

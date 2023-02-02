@@ -1,6 +1,7 @@
 .popup__field{
-    opacity: .2;
+    margin: 0;
     color: #000000;
+    /*настройка шрифта*/
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
