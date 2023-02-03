@@ -100,25 +100,25 @@
             <form name="popup-profile-form" class="popup__input-list" novalidate>
               <label class="popup__field">
                 <input id="name-input" 
-                    name="userName" 
                     class="popup__input" 
                     type="text" 
                     placeholder="Имя" 
                     minlength="2" 
-                    maxlength="30" 
+                    maxlength="30"
+                    value="Жак-Ив Кусто" 
                     required>
               </label>
               <label class="popup__field">
-                <input id="about-input"
-                    name="userDestiny"
+                <input id="destiny-input"
                     class="popup__input"
                     type="text"
                     placeholder="О себе"
                     minlength="2"
                     maxlength="200"
+                    value="Исследователь океана"
                     required>
               </label>
-              <button class="popup__save-button popup__save-button_inactive" id="save_popup" type="submit">Сохранить</button>
+              <button class="popup__save-button popup__save-button_active" id="save_popup" type="submit">Сохранить</button>
             </form>
           </div>
         </div>

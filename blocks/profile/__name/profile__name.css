@@ -1,6 +1,10 @@
 .profile__name{
     margin: 0;
     padding: 0;
+    max-width: 430px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     /*настройка шрифта*/
     font-style: normal;
     font-weight: 500;
