@@ -13,18 +13,20 @@ function ProfileEdit(){
     editDestinyProfile.textContent = destinyIn.value;
 }
 
-openPopup.addEventListener('click', function(e){
-    e.preventDefault();
-    mainPopup.classList.add('popup_opened');
-});
-
-closePopup.addEventListener('click', function(e){
-    e.preventDefault();
+function PopupClose(){
     mainPopup.classList.remove('popup_opened');
-});
+}
+
+function PopupOpen(){
+    mainPopup.classList.add('popup_opened');
+}
+
+openPopup.addEventListener('click', PopupOpen);
+
+closePopup.addEventListener('click', PopupClose);
 
 savePopup.addEventListener('click', function(e){
     e.preventDefault();
     ProfileEdit();
-    mainPopup.classList.remove('popup_opened');
+    PopupClose();
 });

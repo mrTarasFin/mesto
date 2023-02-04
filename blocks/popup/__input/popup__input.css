@@ -5,8 +5,7 @@
     height: 27px;
     border: none;
     border-bottom: 1px solid #000000;
-    
-    
+    opacity: .2;    
 }
 
 .popup__input:focus{
