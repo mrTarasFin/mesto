@@ -1,5 +1,6 @@
 .profile__destiny{
     margin: 16px 0 0 0;
+    max-width: 430px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
