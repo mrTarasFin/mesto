@@ -4,14 +4,15 @@ const savePopup = document.querySelector('.popup__save-button');
 const mainPopup = document.querySelector('.popup');
 let editNameProfile = document.querySelector('.profile__name');
 let editDestinyProfile = document.querySelector('.profile__destiny');
-let nameIn = document.getElementsByClassName('.popup__input_type_name');
-let destinyIn = document.getElementsByClassName('.popup__input_type_destiny');
+let nameInPopup = document.querySelector('#name-input');
+let destinyInPopup = document.querySelector('#destiny-input');
 
 
-function profileEdit(){
-    
-    editNameProfile.textContent = nameIn.value;
-    editDestinyProfile.textContent = destinyIn.value;
+function profileEdit(e){
+    e.preventDefault();
+    editNameProfile.textContent = nameInPopup.value;
+    editDestinyProfile.textContent = destinyInPopup.value;
+    popupClose();
 }
 
 function popupClose(){
@@ -20,14 +21,14 @@ function popupClose(){
 
 function popupOpen(){
     mainPopup.classList.add('popup_opened');
+    let name = editNameProfile.textContent;
+    let destiny = editDestinyProfile.textContent;
+    nameInPopup.value = name;
+    destinyInPopup.value = destiny;
 }
 
 openPopup.addEventListener('click', popupOpen);
 
 closePopup.addEventListener('click', popupClose);
 
-savePopup.addEventListener('click', function(e){
-    e.preventDefault();
-    profileEdit();
-    popupClose();
-});
+savePopup.addEventListener('click', profileEdit);

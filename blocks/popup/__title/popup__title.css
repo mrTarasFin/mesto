@@ -1,6 +1,7 @@
 .popup__title{
     margin: 0 0 54px 0;
-    padding: 34px 0 0 0;
+    padding: 0;
+    width: 330px;
     color: #000000;
     /*настройка шрифта*/
     font-style: normal;
@@ -9,8 +10,10 @@
     line-height: 29px;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 880px) {
     .popup__title{
+        margin: 14px 0 0 0;
+        width: 238px;
         font-size: 18px;
         line-height: 22px;
     }
