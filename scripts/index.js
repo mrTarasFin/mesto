@@ -1,32 +1,33 @@
-const openPopup = document.getElementById('open_popup');
-const closePopup = document.getElementById('close_popup')
-const savePopup = document.getElementById('save_popup');
-const mainPopup = document.getElementById('main_popup');
+const openPopup = document.querySelector('.profile__edit-button');
+const closePopup = document.querySelector('.popup__close-button')
+const savePopup = document.querySelector('.popup__save-button');
+const mainPopup = document.querySelector('.popup');
 let editNameProfile = document.querySelector('.profile__name');
 let editDestinyProfile = document.querySelector('.profile__destiny');
-let nameIn = document.getElementById('name-input');
-let destinyIn = document.getElementById('destiny-input');
+let nameIn = document.getElementsByClassName('.popup__input_type_name');
+let destinyIn = document.getElementsByClassName('.popup__input_type_destiny');
 
-function ProfileEdit(){
+
+function profileEdit(){
     
     editNameProfile.textContent = nameIn.value;
     editDestinyProfile.textContent = destinyIn.value;
 }
 
-function PopupClose(){
+function popupClose(){
     mainPopup.classList.remove('popup_opened');
 }
 
-function PopupOpen(){
+function popupOpen(){
     mainPopup.classList.add('popup_opened');
 }
 
-openPopup.addEventListener('click', PopupOpen);
+openPopup.addEventListener('click', popupOpen);
 
-closePopup.addEventListener('click', PopupClose);
+closePopup.addEventListener('click', popupClose);
 
 savePopup.addEventListener('click', function(e){
     e.preventDefault();
-    ProfileEdit();
-    PopupClose();
+    profileEdit();
+    popupClose();
 });
