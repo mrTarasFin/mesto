@@ -6,12 +6,8 @@
   left: 0px;
   z-index: 2;
   background-color: rgba(0, 0, 0, .5);
-  visibility: hidden;
-  opacity: 0;
+  display: none;
+  opacity: 1;
   transition: all .3s;
 }
 
-.popup.popup_opened{
-  visibility: visible;
-  opacity: 1;
-}

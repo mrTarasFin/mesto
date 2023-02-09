@@ -1,4 +1,18 @@
 .footer__copyright{
     margin: 0;
-    padding: 0 0 0 16px;
+    /*настройка шрифта*/
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #545454;
+}
+
+@media screen and (max-width: 880px) {
+    .footer__copyright{
+        padding: 0 0 0 19px;
+        /*настройка шрифта*/
+        font-size: 14px;
+        line-height: 17px;
+    }
 }

@@ -19,7 +19,7 @@
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 880px) {
     .profile__name{
         text-align: center;
     }

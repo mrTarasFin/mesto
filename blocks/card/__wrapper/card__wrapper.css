@@ -7,3 +7,10 @@
     border-radius: 0 0 10px 10px;
     gap: 26px;
 }
+
+@media screen and (max-width: 880px) {
+    .card__wrapper{
+        padding: 25px 15px 31px 21px;
+    }
+    
+}
