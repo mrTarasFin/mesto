@@ -21,14 +21,12 @@ function popupClose(){
 
 function popupOpen(){
     mainPopup.classList.add('popup_opened');
-    let name = editNameProfile.textContent;
-    let destiny = editDestinyProfile.textContent;
-    nameInPopup.value = name;
-    destinyInPopup.value = destiny;
+    nameInPopup.value = editNameProfile.textContent;
+    destinyInPopup.value = editDestinyProfile.textContent;
 }
 
 openPopup.addEventListener('click', popupOpen);
 
 closePopup.addEventListener('click', popupClose);
 
-savePopup.addEventListener('click', profileEdit);
+mainPopup.addEventListener('submit', profileEdit);
