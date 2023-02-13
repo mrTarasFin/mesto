@@ -70,6 +70,36 @@
           </form>
         </div>
       </section>
+      <!--Popup input cards-->
+      <section class="popup" id="card-popup">
+        <div class="popup__container">
+          <button class="popup__close-button" id="close_popup" type="button"></button>
+          <h3 class="popup__title">Новое место</h3>
+          <form class="popup__form" name="popup-card-form" novalidate>
+            <label class="popup__field">
+              <input  id="place-name-input"
+                      name="placename"
+                      class="popup__input popup__input_type_placename"
+                      type="text"
+                      placeholder="Название"
+                      minlength="2"
+                      maxlength="30"
+                      required>
+            </label>
+            <label class="popup__field">
+              <input  id="image-name-input"
+                      name="imagename"
+                      class="popup__input popup__input_type_imagename"
+                      type="text"
+                      placeholder="ссылка на фото"
+                      minlength="2"
+                      maxlength="30"
+                      required>
+            </label>
+            <button type="submit" class="popup__submit" aria-label="Создать">Создать</button>
+          </form>
+        </div>
+      </div>
       <template id="card-template">
         <div class="card">
           <button type="button" class="card__button-delete"></button>
