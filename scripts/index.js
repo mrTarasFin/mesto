@@ -4,8 +4,8 @@ const savePopup = document.querySelector('.popup__save-button');
 const mainPopup = document.querySelector('.popup');
 let editNameProfile = document.querySelector('.profile__name');
 let editDestinyProfile = document.querySelector('.profile__destiny');
-let nameInPopup = document.querySelector('.popup__input.popup__input_type_name');
-let destinyInPopup = document.querySelector('.popup__input.popup__input_type_destiny');
+let nameInPopup = document.querySelector('.popup__input_type_name');
+let destinyInPopup = document.querySelector('.popup__input_type_destiny');
 
 
 function profileEdit(e){
