@@ -93,15 +93,16 @@
                       type="text"
                       placeholder="ссылка на фото"
                       minlength="2"
-                      maxlength="30"
+                      maxlength="200"
                       required>
             </label>
-            <button type="submit" class="popup__save-button">Создать</button>
+            <button type="submit" class="popup__save-button" id="card-save_popup">Создать</button>
           </form>
         </div>
       </div>
       <template id="card-template">
         <li class="card">
+          <button type="button" class="card__button-delete"></button>
           <img src="#" class="card__image" alt="картинка">
           <div class="card__wrapper">
             <h2 class="card__title"></h2>
