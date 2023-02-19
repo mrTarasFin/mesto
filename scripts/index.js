@@ -18,6 +18,7 @@ const imageInPopupCard = document.querySelector('.popup__input_type_imagename');
 const cardTemplate = document.querySelector('#card-template').content;
 const cardAddList = document.querySelector('.elements__list');
 
+
 const initialCards = [
     {
     name: 'Архыз',
@@ -58,7 +59,7 @@ function cardAdd(e){
     const cardElements = cardTemplate.querySelector('.card').cloneNode(true);
     cardElements.querySelector('.card__image').src = imageInPopupCard.value;
     cardElements.querySelector('.card__title').textContent = placeInPopupCard.value;
-    cardAddList.append(cardElements);
+    cardAddList.prepend(cardElements);
     popupCloseCard();
 }
 
@@ -87,14 +88,14 @@ function popupOpenCard(){
     cardPopup.classList.add('popup_opened');
 }
 
-const likePopupCard = document.querySelectorAll('.card__button-like');
-likePopupCard.forEach((button) => {
-    button.addEventListener('click', () => {
+
+Array.from(cardAddList).forEach(button => {
+    console.log(button);
+    button = document.querySelectorAll('.card__button-like');
+    button.addEventListener('click', () =>{
         button.classList.add('card__button-like_active');
     });
 });
-
-
 
 openPopup.addEventListener('click', popupOpen);
 closePopup.addEventListener('click', popupClose);
