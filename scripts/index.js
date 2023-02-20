@@ -86,8 +86,8 @@ function popupOpen(popupElemet){
 
     }else
         popupElemet.classList.add('popup_zoom');
-        imageZoom = 
-        titleZoom
+        // imageZoom = 
+        // titleZoom
 }
 
 
