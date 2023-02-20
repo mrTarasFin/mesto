@@ -1,0 +1,8 @@
+.popup__caontainer-zoom{
+    margin: 0;
+    padding: 0;
+    max-height: 75vh;
+    max-width: 75vw;
+    position: relative;
+    box-sizing: border-box;
+}
