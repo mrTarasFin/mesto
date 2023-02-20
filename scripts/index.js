@@ -15,8 +15,8 @@ const placeInPopupCard = document.querySelector('.popup__input_type_placename');
 const imageInPopupCard = document.querySelector('.popup__input_type_imagename');
 
 const zoomPopup = document.querySelector('#image-zoom');
-const imageZoom = ducument.querySelector('.popup__image');
-const titleZoom = document.querySelector('.popup__image-title');
+// const imageZoom = ducument.querySelector('.popup__image');
+// const titleZoom = document.querySelector('.popup__image-title');
 
 const cardTemplate = document.querySelector('#card-template').content;
 const cardAddList = document.querySelector('.elements__list');
